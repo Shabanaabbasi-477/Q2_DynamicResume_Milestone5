@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:4%;
+ 
+
+}
+
+.resumeDiv {
+    width: 70%;
+    border: 2px solid black;
+    background-color: rgb(243, 218, 188);
+
+}
+
+header {
+    width: 100%;
+    height: 150px;
+   background-color:rgba(19, 20, 21, 0.874);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 30px;
+
+}
+.white{
+    color:  rgb(247, 202, 148);
+
+}
+
+header img {
+    width: 130px;
+    height: 150px;
+    border-radius: 50%;
+
+
+}
+.content{
+    width:100%;
+    display: flex;
+ 
+}
+.content aside{
+    width:30%;
+    padding:50px;
+    padding-bottom: 50px;
+}
+.contact,
+.education,
+.skill,
+.language
+{
+    margin-bottom:30px;
+}
+.content h2,
+.education h2 ,
+.skill h2,
+.language h2,
+.experience h2,
+.refrence h2
+{
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    color:rgba(20, 20, 21, 0.874);
+}
+.education{
+    line-height: 22px;
+}
+.skill ul{
+    margin-left:15px;
+}
+.main-content{
+    width:70%;
+    padding:50px;
+}
+.experience-items{
+    margin-bottom:40px;
+}
+.experience-items p{
+    margin-bottom: 5px;
+    
+}
+.experience-items ul{
+    margin-left: 18px;
+    margin-top:15px;
+}
+
+.btnDiv{
+    width:70%;
+    padding:2%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+
+    margin-top:30px;
+}
+.btn{
+  font-size: 20px;
+  font-weight: 600;
+  padding:10px 20px;
+  border-radius: 20px;
+  color:  rgb(247, 202, 148);
+  background-color:rgba(18, 18, 18, 0.874);
+  cursor: pointer;
+
+ &:hover{
+  background-color: rgb(54, 208, 213);
+ }
+ &:active{
+    transform: scale(0.95);
+ }
+}
+
+.hide{
+    display: none;
+}
+
+@media print{
+    .btnDiv{
+        display:none;
+    }
+}
+
+
+@media (max-width: 786px){
+    .content{
+        flex-direction: column;
+    }
+    aside, .main-content {
+        width:100%;
+    }
+}

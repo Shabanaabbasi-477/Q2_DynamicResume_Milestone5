@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="resumeDiv">
+        <header>
+            <div>
+                <h1 class="white"><span id="resName"></span></h1>
+                <h3 class="white"><span id="resDesig"></span></h3>
+            </div>
+            <img id="resImg" src="profilePic.png" alt="">
+        </header>
+        <div class="content">
+            <aside>
+                <section id="contact_sec" class="contact">
+                    <h2>Contact Detail:</h2>
+                    <p><strong>Phone</strong></p>
+                    <p><span id="resPhone"></span></p>
+                    <br>
+                    <p><strong>Email</strong></p>
+                    <p><span id="resEmail"></span></p>
+                    <br>
+
+
+                </section>
+                <section id="education" class="education">
+                    <h2>Education:</h2>
+                    <p><span id="resPass"></span></p>
+                    <p><span id="resDeg"></span></p>
+                    <p><span id="resIns"></span></p>
+
+                </section>
+                <section id="skill" class="skill">
+                    <h2>Skills:</h2>
+                    <ul>
+                        <li><span id="resSk1"></span></li>
+                        <li><span id="resSk2"></span></li>
+                        <li><span id="resSk3"></span></li>
+
+                    </ul>
+                </section>
+                <section id="language" class="language">
+                    <h2>Languages:</h2>
+                    <p><span id="resLang1"></span></p>
+                    <p><span id="resLang2"></span></p>
+
+                </section>
+            </aside>
+            <main class="main-content">
+                <section id="experience" class="experience">
+                    <h2>Experience:</h2>
+                    <div class="experience-items">
+                        <p><span id="resSty"></span></p>
+                        <p><span id="resEndy"></span></p>
+                        <p><span id="resComp"></span></p>
+                        <p><span id="resJobT"></span></p>
+
+                        <ul>
+                            <li><span id="resAchieve1"></span></li>
+                            <li><span id="resAchieve2"></span></li>
+                            <li><span id="resAchieve3"></span></li>
+                        </ul>
+                    </div>
+
+                </section>
+                <section id="refrence" class="refrence">
+                    <h2>Reference:</h2>
+                    <p>Available upon request</p>
+
+                </section>
+            </main>
+
+        </div>
+
+    </div>
+
+    <div class="btnDiv">
+
+        <button id="print_btn" class="btn">Print</button>
+        
+        <button id="edit_btn" class="btn">Edit</button>
+        <a id="anc" href=""><button id="share_btn" class="btn">Shareable Link</button></a>
+       
+        <button id="copy_btn" class="btn">Copy Link Address</button>
+    </div>
+</body>
+<script src="resumeScript.js"></script>
+
+</html>
